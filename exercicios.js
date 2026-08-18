@@ -34,8 +34,10 @@ console.log("EX 1 - Divisão:", num1 / num2);
 // Converta para Fahrenheit e mostre no console.
 // Fórmula: F = C * 9/5 + 32
 // ------------------------------------------------------------
+let celsius = 25;
+let fahrenheit = celsius * 9 / 5 + 32;
 
-
+console.log(fahrenheit);
 
 
 // EXERCÍCIO 3 - Par ou ímpar
