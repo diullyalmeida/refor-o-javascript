@@ -19,7 +19,13 @@
 // Crie 2 variáveis com números e mostre no console
 // o resultado da soma, subtração, multiplicação e divisão.
 // ------------------------------------------------------------
+let num1 = 10;
+let num2 = 5;
 
+console.log("EX 1 - Soma:", num1 + num2);
+console.log("EX 1 - Subtração:", num1 - num2);
+console.log("EX 1 - Multiplicação:", num1 * num2);
+console.log("EX 1 - Divisão:", num1 / num2);
 
 
 
