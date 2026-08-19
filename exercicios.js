@@ -397,7 +397,15 @@ console.log(menor);
 // Depois ordene ao contrário (Z até A) e mostre também.
 // Dica: use .sort() e .reverse()
 // ------------------------------------------------------------
+let nomes = ["Carlos","Ana", "Pedro", "Maria", "João", "Beatriz"];
 
+nomes.sort();
+
+console.log(nomes);
+
+nomes.reverse();
+
+console.log(nomes);
 
 
 
