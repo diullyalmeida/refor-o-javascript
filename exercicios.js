@@ -381,7 +381,13 @@ console.log(listaCompras);
 // Dica: use Math.max(...array) e Math.min(...array)
 // Ou tente fazer com um for (mais desafiador!).
 // ------------------------------------------------------------
+let numeros = [8, 3, 15, 2, 10, 7, 20, 5];
 
+let maior = Math.max(...numeros);
+let menor = Math.min(...numeros);
+
+console.log(maior);
+console.log(menor);
 
 
 
