@@ -485,7 +485,9 @@ function diminuir() {
 // Dica: use classList.toggle() com uma classe CSS que tenha
 // display: none
 // ------------------------------------------------------------
-
+function mostrarEsconder() {
+    document.getElementById("texto").classList.toggle("esconder");
+}
 
 
 
