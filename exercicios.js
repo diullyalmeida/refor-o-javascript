@@ -570,7 +570,63 @@ function resetar() {
 // Dica: guarde as perguntas num array de objetos:
 //   { pergunta: "...", opcoes: ["a", "b", "c"], correta: 1 }
 // ------------------------------------------------------------
+let perguntas = [
+    {
+        pergunta: "Quanto é 2 + 2?",
+        opcoes: ["3", "4", "5"],
+        correta: 1
+    },
+    {
+        pergunta: "Qual é a capital do Brasil?",
+        opcoes: ["Brasília", "São Paulo", "Curitiba"],
+        correta: 0
+    },
+    {
+        pergunta: "Quanto é 5 + 5?",
+        opcoes: ["8", "10", "12"],
+        correta: 1
+    },
+    {
+        pergunta: "Qual é a cor do céu?",
+        opcoes: ["Verde", "Azul", "Rosa"],
+        correta: 1
+    },
+    {
+        pergunta: "Quanto é 10 - 5?",
+        opcoes: ["3", "5", "7"],
+        correta: 1
+    }
+];
 
+let atual = 0;
+let pontos = 0;
+
+function mostrarPergunta() {
+    let pergunta = perguntas[atual];
+
+    document.getElementById("pergunta").textContent = pergunta.pergunta;
+
+    document.getElementById("opcao1").textContent = pergunta.opcoes[0];
+    document.getElementById("opcao2").textContent = pergunta.opcoes[1];
+    document.getElementById("opcao3").textContent = pergunta.opcoes[2];
+}
+
+function responder(opcao) {
+    if (opcao === perguntas[atual].correta) {
+        pontos++;
+    }
+
+    atual++;
+
+    if (atual < perguntas.length) {
+        mostrarPergunta();
+    } else {
+        document.getElementById("quiz").textContent =
+            "Você acertou " + pontos + " de 5";
+    }
+}
+
+mostrarPergunta();
 
 
 
