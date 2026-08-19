@@ -283,7 +283,21 @@ console.log(saudacao("Maria"));
 // Dica: use um for de 2 até numero-1 e verifique se
 // algum divide o número sem resto (numero % i === 0).
 // ------------------------------------------------------------
+function ehPrimo(numero) {
+    if (numero < 2) {
+        return false;
+    }
 
+    for (let i = 2; i < numero; i++) {
+        if (numero % i === 0) {
+            return false;
+        }
+    }
+
+    return true;
+}
+
+console.log(ehPrimo(7));
 
 
 
