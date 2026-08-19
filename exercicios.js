@@ -415,7 +415,17 @@ console.log(nomes);
 // Mostre o array de pares no console.
 // Dica: use .filter(function(numero) { return numero % 2 === 0 })
 // ------------------------------------------------------------
+let numeros = [];
 
+for (let i = 1; i <= 20; i++) {
+    numeros.push(i);
+}
+
+let pares = numeros.filter(function(numero) {
+    return numero % 2 === 0;
+});
+
+console.log(pares);
 
 
 
