@@ -638,7 +638,33 @@ mostrarPergunta();
 // Dica: crie uma string com os caracteres possíveis e use
 // Math.random() para escolher caracteres aleatórios.
 // ------------------------------------------------------------
+function gerarSenha() {
+    let tamanho = Number(document.getElementById("tamanho").value);
 
+    let letras = "abcdefghijklmnopqrstuvwxyz";
+    let caracteres = letras;
+
+    if (document.getElementById("maiusculas").checked) {
+        caracteres += "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    }
+
+    if (document.getElementById("numeros").checked) {
+        caracteres += "0123456789";
+    }
+
+    if (document.getElementById("simbolos").checked) {
+        caracteres += "!@#$%&*";
+    }
+
+    let senha = "";
+
+    for (let i = 0; i < tamanho; i++) {
+        let numero = Math.floor(Math.random() * caracteres.length);
+        senha += caracteres[numero];
+    }
+
+    document.getElementById("senha").textContent = senha;
+}
 
 
 
