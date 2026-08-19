@@ -464,7 +464,17 @@ function verde() {
 // Dica: use uma variável para guardar o valor do contador
 // e atualize o textContent do <h1> a cada clique.
 // ------------------------------------------------------------
+let contador = 0;
 
+function aumentar() {
+    contador++;
+    document.getElementById("contador").textContent = contador;
+}
+
+function diminuir() {
+    contador--;
+    document.getElementById("contador").textContent = contador;
+}
 
 
 
