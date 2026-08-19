@@ -495,7 +495,27 @@ function mostrarEsconder() {
 // Esse exercício é a atividade principal!
 // Abra o arquivo script.js da atividade e complete os níveis.
 // ------------------------------------------------------------
+let tarefas = [];
 
+function adicionar() {
+    let tarefa = document.getElementById("tarefa").value;
+
+    if (tarefa !== "") {
+        tarefas.push(tarefa);
+        document.getElementById("tarefa").value = "";
+        mostrar();
+    }
+}
+
+function mostrar() {
+    let lista = document.getElementById("lista");
+
+    lista.innerHTML = "";
+
+    for (let i = 0; i < tarefas.length; i++) {
+        lista.innerHTML += "<li>" + tarefas[i] + "</li>";
+    }
+}
 
 // ============================================================
 //  BLOCO 7 - DOM + LÓGICA COMBINADA (Desafio!)
