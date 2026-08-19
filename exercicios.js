@@ -194,7 +194,11 @@ if (nota >= 9) {
 //   "5 x 2 = 10"
 //   ... até "5 x 10 = 50"
 // ------------------------------------------------------------
+let numero = 5;
 
+for (let i = 1; i <= 10; i++) {
+    console.log(numero + " x " + i + " = " + numero * i);
+}
 
 
 
@@ -203,7 +207,11 @@ if (nota >= 9) {
 // Mostre cada número no console.
 // No final, mostre "Feliz Ano Novo!" (ou qualquer mensagem).
 // ------------------------------------------------------------
+for (let i = 10; i >= 0; i--) {
+    console.log(i);
+}
 
+console.log("Feliz Ano Novo!");
 
 
 
