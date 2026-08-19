@@ -675,4 +675,30 @@ function gerarSenha() {
 // Dica: mude o atributo src da <img> com JavaScript.
 // ------------------------------------------------------------
 
+let imagens = [
+    "https://picsum.photos/id/10/800/500",
+    "https://picsum.photos/id/20/800/500",
+    "https://picsum.photos/id/30/800/500"
+];
 
+let atual = 0;
+
+function proxima() {
+    atual++;
+
+    if (atual >= imagens.length) {
+        atual = 0;
+    }
+
+    document.getElementById("imagem").src = imagens[atual];
+}
+
+function anterior() {
+    atual--;
+
+    if (atual < 0) {
+        atual = imagens.length - 1;
+    }
+
+    document.getElementById("imagem").src = imagens[atual];
+}
