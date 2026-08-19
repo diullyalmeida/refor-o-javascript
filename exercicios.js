@@ -168,7 +168,19 @@ if (minhaJogada === computador) {
 
 
 
+let nota = 8;
 
+if (nota >= 9) {
+    console.log("A");
+} else if (nota >= 7) {
+    console.log("B");
+} else if (nota >= 5) {
+    console.log("C");
+} else if (nota >= 3) {
+    console.log("D");
+} else {
+    console.log("F");
+}
 // ============================================================
 //  BLOCO 3 - LOOPS (for, while)
 // ============================================================
