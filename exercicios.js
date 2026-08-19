@@ -529,7 +529,38 @@ function mostrar() {
 // Dica: use setInterval() para contar e clearInterval() para pausar.
 // ------------------------------------------------------------
 
+let segundos = 0;
+let minutos = 0;
+let tempo;
 
+function iniciar() {
+    tempo = setInterval(function() {
+        segundos++;
+
+        if (segundos === 60) {
+            segundos = 0;
+            minutos++;
+        }
+
+        let m = minutos < 10 ? "0" + minutos : minutos;
+        let s = segundos < 10 ? "0" + segundos : segundos;
+
+        document.getElementById("tempo").textContent = m + ":" + s;
+    }, 1000);
+}
+
+function pausar() {
+    clearInterval(tempo);
+}
+
+function resetar() {
+    clearInterval(tempo);
+
+    segundos = 0;
+    minutos = 0;
+
+    document.getElementById("tempo").textContent = "00:00";
+}
 
 
 // EXERCÍCIO 26 - Quiz de perguntas
