@@ -240,7 +240,20 @@ console.log(soma);
 // Quando acertar, mostre "Parabéns! Acertou!"
 // Dica: use prompt() para pedir o palpite do usuário.
 // ------------------------------------------------------------
+let secreto = Math.floor(Math.random() * 10) + 1;
+let palpite = Number(prompt("Digite um número de 1 a 10"));
 
+while (palpite !== secreto) {
+    if (palpite > secreto) {
+        console.log("O número é menor");
+    } else {
+        console.log("O número é maior");
+    }
+
+    palpite = Number(prompt("Tente novamente"));
+}
+
+console.log("Parabéns! Acertou!")
 
 
 
