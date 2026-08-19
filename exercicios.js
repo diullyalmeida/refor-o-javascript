@@ -268,7 +268,11 @@ console.log("Parabéns! Acertou!")
 // Chame a função e mostre o resultado no console.
 // Exemplo: saudacao("Maria") retorna "Olá, Maria!"
 // ------------------------------------------------------------
+function saudacao(nome) {
+    return "Olá, " + nome + "!";
+}
 
+console.log(saudacao("Maria"));
 
 
 
