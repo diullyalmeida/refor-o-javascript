@@ -358,7 +358,19 @@ console.log(contarVogais("javascript"));
 // Mostre a lista no console.
 // Remova o último item com pop() e mostre a lista novamente.
 // ------------------------------------------------------------
+let listaCompras = [];
 
+listaCompras.push("Arroz");
+listaCompras.push("Feijão");
+listaCompras.push("Leite");
+listaCompras.push("Pão");
+listaCompras.push("Carne");
+
+console.log(listaCompras);
+
+listaCompras.pop();
+
+console.log(listaCompras);
 
 
 
