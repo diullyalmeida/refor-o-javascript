@@ -134,7 +134,25 @@ if (imc < 18.5) {
 //   let computador = opcoes[Math.floor(Math.random() * 3)]
 // Compare as jogadas e mostre quem ganhou.
 // ------------------------------------------------------------
+let minhaJogada = "pedra";
 
+let opcoes = ["pedra", "papel", "tesoura"];
+let computador = opcoes[Math.floor(Math.random() * 3)];
+
+console.log("Você:", minhaJogada);
+console.log("Computador:", computador);
+
+if (minhaJogada === computador) {
+    console.log("Empate");
+} else if (
+    minhaJogada === "pedra" && computador === "tesoura" ||
+    minhaJogada === "papel" && computador === "pedra" ||
+    minhaJogada === "tesoura" && computador === "papel"
+) {
+    console.log("Você ganhou");
+} else {
+    console.log("Computador ganhou");
+}
 
 
 
