@@ -308,7 +308,11 @@ console.log(ehPrimo(7));
 // Dica: use split('') para virar array, reverse() para
 // inverter, e join('') para voltar a ser string.
 // ------------------------------------------------------------
+function inverter(texto) {
+    return texto.split("").reverse().join("");
+}
 
+console.log(inverter("javascript"));
 
 
 
