@@ -323,7 +323,27 @@ console.log(inverter("javascript"));
 // Dica: transforme em minúscula com .toLowerCase()
 // e verifique cada letra com um for.
 // ------------------------------------------------------------
+function contarVogais(palavra) {
+    let contador = 0;
 
+    palavra = palavra.toLowerCase();
+
+    for (let i = 0; i < palavra.length; i++) {
+        if (
+            palavra[i] === "a" ||
+            palavra[i] === "e" ||
+            palavra[i] === "i" ||
+            palavra[i] === "o" ||
+            palavra[i] === "u"
+        ) {
+            contador++;
+        }
+    }
+
+    return contador;
+}
+
+console.log(contarVogais("javascript"));
 
 
 
